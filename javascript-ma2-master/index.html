@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <p>Click the button to replace the football clubs with cars:</p>
+  <button onclick="changeInterests()">Click me</button>
+  <p id="firstArray"></p>
+  <script>
+    var interestsArray = ["Manchester United", "Liverpool", "Mjøndalen", "Barcelona"];
+    document.getElementById("firstArray").innerHTML =  interestsArray;
+    function changeInterests() {
+      interestsArray = [];                                                //Removed all items from array
+      interestsArray.push("Ford", "Toyota", "Mercedes", "Volvo");         // Adding 4 new values to the array
+      document.getElementById("firstArray").innerHTML = interestsArray;
+    }
+    console.log(interestsArray);
+  </script>
+  <script src="javascript1_ma2.js"></script>
+</body>
+</html>
